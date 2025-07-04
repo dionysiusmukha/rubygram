@@ -1,5 +1,5 @@
-# Run this script
+# Rubygram
 
 ```sh
-$ ruby hello.rb
+$ Hello
 ```
