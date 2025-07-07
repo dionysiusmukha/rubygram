@@ -9,5 +9,3 @@ def foobar()
     return firstNumber + secondNumber
   end
 end
-
-print foobar

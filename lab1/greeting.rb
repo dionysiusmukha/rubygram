@@ -6,10 +6,11 @@ def greeting()
   puts "Введите возраст"
   age = gets.to_i
   if age < 18
-    puts "Привет, #{name} #{lastname}. Тебе меньше 18, но начать учиться программировать никогда не рано"
+    message = "Привет, #{name} #{lastname}. Тебе меньше 18, но начать учиться программировать никогда не рано"
   else
-    puts "Привет, #{name} #{lastname}. Самое время заняться делом!"
+    message = "Привет, #{name} #{lastname}. Самое время заняться делом!"
   end
-end
 
-greeting
+  puts message
+  return message
+end
