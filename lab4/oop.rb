@@ -1,5 +1,5 @@
 class CashMachine
-  attr_reader :balance
+  attr_accessor :balance
   def initialize(start_balance = 100)
     if File.exist?('balance.txt') && !File.zero?('balance.txt')
       @balance = File.read('balance.txt').to_i
@@ -79,5 +79,3 @@ class CashMachine
     puts 'Всего хорошего!'
   end
 end
-
-CashMachine.init
